@@ -1,7 +1,7 @@
 #
 
 output "cidr" {
-  value = local.public_cidr
+  value = cidrsubnet(local.public_cidr, 0, 0)
 }
 
 output "ip" {
